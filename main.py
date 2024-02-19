@@ -17,15 +17,13 @@ class Auto:
 
     def verificarIntegridad(self):
         if self.registro==self.motor.registro:
-           for asiento in self.asientos:
+            for asiento in self.asientos:
                 if (type(asiento)==Asiento):
                     if asiento.registro!=self.registro:
-                        mensaje="Las piezas no son originales"
-                    else:
-                        mensaje="Auto original"
+                        return "Las piezas no son originales"
+            return "Auto original"
         else:
-            mensaje="Las piezas no son originales"
-        return mensaje
+            return "Las piezas no son originales"
 class Asiento:
     def __init__(self,color, precio, registro):
         self.color=color
