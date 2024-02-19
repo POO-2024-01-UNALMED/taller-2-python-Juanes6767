@@ -19,13 +19,13 @@ class Auto:
         if self.registro==self.motor.registro:
             i=0
             while i<len(self.asientos):
-                if self.asientos[i]==self.registro:
+                if self.asientos[i]!=self.registro:
                     mensaje="Las piezas no son originales"
                 else:
                     mensaje="Auto original"
                 i+=1
         else:
-                    mensaje="Auto original"
+            mensaje="Las piezas no son originales"
         return mensaje
 class Asiento:
     def __init__(self,color, precio, registro):
