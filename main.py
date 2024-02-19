@@ -15,7 +15,7 @@ class Auto:
                 count+=1
         return count
 
-    def verificarIntegridad(self)
+    def verificarIntegridad(self):
         i=0
         while i<=len(self.asientos):
             if i!=None:
