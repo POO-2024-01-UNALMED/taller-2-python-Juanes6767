@@ -15,7 +15,7 @@ class Auto:
                 count+=1
         return count
 
-    def verficarIntegridad(self):
+    def verificarIntegridad(self):
         comun=self.Asientos[0]
         for i in self.asientos:
             if comun!=i:
@@ -31,10 +31,8 @@ class Asiento:
         self.color=precio
         self.color=registro
     def cambiarColor(self,color):
-        if (color=="rojo" or color=="verde" or color=="amarillo" or color=="negro" or color=="blanco"):
+        if color=="rojo" or color=="verde" or color=="amarillo" or color=="negro" or color=="blanco":
             self.color=color
-        else:
-            self.color=self.color
 
 class Motor:
     def __init__(self,numeroCilindros, tipo, registro):
