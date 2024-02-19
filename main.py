@@ -16,7 +16,7 @@ class Auto:
         return count
 
     def verificarIntegridad(self):
-        if self.registro==Motor.registro:
+        if self.registro==self.motor.registro:
             i=0
             while i<=len(self.asientos):
                 if self.asientos[i]==self.registro:
