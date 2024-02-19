@@ -12,7 +12,7 @@ class Auto:
     def cantidadAsientos(self):
         count=0
         for i in self.asientos:
-            if i!=None:
+            if (i!=None and isinstance(i,Asiento)):
                 count+=1
         return count
             
