@@ -18,7 +18,7 @@ class Auto:
     def verificarIntegridad(self):
         if self.registro==self.motor.registro:
             i=0
-            while i<=len(self.asientos):
+            while i<len(self.asientos):
                 if self.asientos[i]==self.registro:
                     mensaje="Las piezas no son originales"
                 else:
