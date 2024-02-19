@@ -19,7 +19,7 @@ class Auto:
         if self.registro==self.motor.registro:
             i=0
             while i<len(self.asientos):
-                if self.asientos[i]!=self.registro:
+                if (self.asientos[i].registro)!=self.registro:
                     mensaje="Las piezas no son originales"
                 else:
                     mensaje="Auto original"
