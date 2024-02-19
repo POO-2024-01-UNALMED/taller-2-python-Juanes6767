@@ -15,12 +15,12 @@ class Auto:
                 count+=1
         return count
 
-    def verificarIntegridad(self):
+    def verificarIntegridad(self)
         i=0
         while i<=len(self.asientos):
             if i!=None:
                 Asiento=(self.asientos)[i]
-                if(Asiento.registro==self.registro==Motor.registro):
+                if(Asiento.registro==self.registro and Motor.registro==Asiento.registro and self.registro==Motor.registro):
                     mensaje="Auto original"
                 else:
                     mensaje="Las piezas no son originales"
