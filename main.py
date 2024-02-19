@@ -18,8 +18,8 @@ class Auto:
     def verificarIntegridad(self):
         i=0
         while i<=len(self.asientos):
-            if i!=None:
-                Asiento=(self.asientos)[i]
+            Asiento=(self.asientos)[i]
+            if Asiento!=None:
                 if(Asiento.registro==self.registro and Motor.registro==Asiento.registro and self.registro==Motor.registro):
                     mensaje="Auto original"
                 else:
