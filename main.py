@@ -16,15 +16,15 @@ class Auto:
         return count
 
     def verificarIntegridad(self):
-        comun=self.asientos[0]
-        for i in self.asientos:
-            if comun.registro!=i.registro:
-                mensaje="Las piezas no son originales"
-        if (comun==self.registro==Motor.registro):
-            mensaje="Auto original"
-        else:
-            mensaje="Las piezas no son originales"
-        return mensaje
+        i=0
+        while i<=len(self.asientos):
+            if i!=None:
+                Asiento=(self.asientos)[i]
+                if(Asiento.registro==self.registro==Motor.registro):
+                    mensaje="Auto original"
+                else:
+                    mensaje="Las piezas no son originales"
+                return mensaje
 class Asiento:
     def __init__(self,color, precio, registro):
         self.color=color
