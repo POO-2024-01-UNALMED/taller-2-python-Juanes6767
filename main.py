@@ -20,9 +20,10 @@ class Auto:
             i=0
             while i<=len(self.asientos):
                 if self.asientos[i]==self.registro:
-                    mensaje="Las piezas son originales"
+                    mensaje="Las piezas no son originales"
                 else:
                     mensaje="Auto original"
+                i+=1
         else:
                     mensaje="Auto original"
         return mensaje
